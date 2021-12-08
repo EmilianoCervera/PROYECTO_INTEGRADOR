@@ -3,7 +3,7 @@
 Medrano Store es una tienda online que esta orientada para que las diferentes marcas puedan mostrar sus catalogos a los consumidores finales, para que estos mismos, desde la comodidad desde sus casas puedan elegir las mejores marcas del país.
 Tenemos como objetivo llegar a las marcas para que quieran tener su tienda online por medio nuestro, así como a toda persona particular que compre online desde los 16 años en adelante. 
 
-Paginas referente:
+Paginas referentes:
 https://www.mercadolibre.com.ar/
 https://www.monkyforce.com/
 https://www.distritomoda.com.ar/
