@@ -14,3 +14,17 @@ a{
     background-color: #d3e4cd;
     font-size: 20px;
 }
+.menu{
+    display: flex;
+    padding-top: 15px;
+}
+
+.menu li a{
+    padding: 20px;
+    color: black;
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+    color: #d3e4cd;
+}
