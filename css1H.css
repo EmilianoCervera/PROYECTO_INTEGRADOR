@@ -1,0 +1,16 @@
+body{
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navegacion{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #d3e4cd;
+    font-size: 20px;
+}
