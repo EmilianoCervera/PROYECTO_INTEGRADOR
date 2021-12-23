@@ -1,38 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medrano Store</title>
-    <link rel="stylesheet" href="css/css1H.css">
-    <style>
-    </style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"crossorigin="anonymous"></link>
+    <link href="css/MEDRANO.CSS" rel="stylesheet">
+    
+    
+<title>Tienda</title>
+  </head>
+  <body>
+    <h1 class="titulo"> MEDRANO STORE</h1>
+    
+    <form id="formulario1" name="formulario1" method="post" action="data.php">
+      Nombre:<br>
+      <input
+      type="text"
+      name="nombre" 
+      id="Nombre" 
+      placeholder="Nombre" 
+      height=""/>
+      <br>
+      Email:<br>
+      <input
+        type="email"
+        name="email"
+        id="Email"
+        value=""
+        placeholder="email"/>
+        
+        <br>
+      Dirección:<br>
+      <input
+        type="text"
+        name="dirección"
+        id="Dirección"
+        value=""
+        placeholder="Dirección"/>
+      <br>
+      Cantidad:<br>
+      <input
+        type="number"
+        name="Cantidad"
+        id="Cantidad"
+        size=""
+        maxlength=""
+        value=""
+        placeholder="cantidad"/>
+      <br>  
+    
+    <div class="pago">
+    <label for="pago">Efectivo<input type="radio" name="pago" value="Efectivo">
+    <label for="pago">Tarjeta<input type="radio" name="pago" value="Tarjeta">
+    <label for="pago">Nequi<input type="radio" name="pago" value="Nequi">
+      </div>
+      <div class="enviar">
+        <form action="" method="post">
+        <button type="reset">Atras</button>
+        <button type="submit">Enviar</button>
+      </form>
+      </div>
+    </form>
 
-    <main>
-        <header id="header" class="header">
-            <nav class="navegacion">
-                <figure>
-                    <a href="Carrito.html" ></a>
-                </figure>
-                <ul class="menu">
-                    <div class="buscador">
-                    </div>
-                    <li>
-                        <a href="Home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="Login.html">Ingresar</a>
-                    </li>
-                    <li>
-                        <a href="Registro.html">Registrarse</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="fondo">
-
-        </section>
-</body>
+    
+  </body>
 </html>
