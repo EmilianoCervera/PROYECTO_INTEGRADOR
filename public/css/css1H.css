@@ -3,7 +3,8 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url();}
+    background-image: url();
+    background-color: #ffe6bc;}
 li{
     list-style-type: none;
     text-decoration: none;}
@@ -14,23 +15,27 @@ a{
     padding-top: 10px;}
 .menu li a{
     padding: 15px;
-    color: #6f796f;}
+    color: black;}
 .menu li a:hover{
     text-decoration: underline;
-    color: #d3e4cd;}
+    color: #8e806a;}
 
 .navegacion{
     display: flex; 
     justify-content: space-between;
     background-color: #d3e4cd;
-    font-size: 15px;}
+    font-size: 15px;
+    background-color: #ffe6bc;
+    border: dotted 2px #8e806a;
+    border-radius: 3px;}
+
 .espaciodefrase{
     display: flex;
-    
+    justify-content: center;
     width: 100%;
-    border-top: dotted 2px white;
     align-items: center;
-    background-color: #d3e4cd;}
+    background-color: #c3b091;
+    border-radius: 3px;}
 
 /* titulo medrano */
 .titular{
@@ -45,15 +50,20 @@ a{
     font-size: 25px;
     padding: 10px;
     text-align: center;}
-
+.estilofrase{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 4px;
+}
 /* Articulos */
 
 .articulos{
-    background-color: #d3e4cd;
+    background-color: #8e806a;
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 0px 0px 10px #6f796f;}
+    box-shadow: 0px 0px 10px #6f796f;
+    border-radius: 3px;}
 .articulos #artconj1, #artconj2, #artvest, #arttop {
     background-color: #d3e4cd;
     display: flex;
@@ -62,28 +72,34 @@ a{
     text-align: center;
     box-shadow: 0px 0px 10px #6f796f;
     align-items: flex-end;}
+
 .img{
     vertical-align: middle;
     border-style: none;
-    width: 100%;
-    box-shadow: 0px 0px 10px #6f796f;}
+    width: 90%;
+    box-shadow: 0px 0px 10px #6f796f;
+    padding: 7px;
+    background-color: #ffe6bc;}
 .recprecios{
     display: flex;
-    background-color: #d3e4cd;
+    background-color: #e4cda7;
     padding-left: 5px;
     margin-bottom: 10px;
     margin-top: 5px;
     text-align: justify;
     flex-wrap: wrap;
-    box-shadow: 0px 0px 10px #6f796f;}
+    box-shadow: 0px 0px 10px #6f796f;
+    background-color: #ffe6bc;}
 .prices{
+    font-size: 20px;
     padding-left: 18px;
     color: #666;}
 .offer{
-    margin-left: 70px;
-    color:#39b54a;}
+    color:#39b54a;
+    margin:10px;
+    font-size:15px;}
 .description{
-    padding-left: 5px;
+    padding-left: 15px;
     color: #666;}
 
 
@@ -113,5 +129,52 @@ a{
 
 /*medidas para breackpoint (0px hasta 480px es un celuu)*/
 
-@media(min-width:){}
-@media(max-width:){}
+@media(min-width:481px){
+    .titular{
+        font-size: 30px;
+    }
+    .articulos{
+        background-color: #8e806a;
+        flex-direction: inherit;
+        box-shadow:none;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .recprecios{
+        padding: 2px;
+        width: 100%;
+    }
+    .recpreciospapu{
+        padding: 15px;
+    }
+    .artconj1{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .artconj2{
+        display: flex;
+        flex-direction: column;
+        width: 30%; 
+    }
+    .artconj3{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        
+    }
+    .artconj4{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        
+    }
+    .espaciodefrase{
+        font-size: 20px;
+    }
+    .estilofrase{
+        font-size: 28px;
+        padding-left: 25px;
+    }
+    
+}
