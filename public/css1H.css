@@ -1,9 +1,12 @@
 body{
-    font-family: 'Arial', Arial, Helvetica, sans-serif;
-}
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url();
+    }
+
 li{
     list-style-type: none;
-}
+    text-decoration: none;
+    }
 a{
     text-decoration: none;
 }
@@ -28,3 +31,109 @@ a{
     text-decoration: underline;
     color: #d3e4cd;
 }
+
+.div{
+        
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 3px;
+    padding: bottom 1px;;
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3e4cd;}
+.titular{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #6f796f;
+    text-align: center;
+    margin: auto;
+    width: 100%;}
+.imagenbanner{
+    display: none;}
+.headlines{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;}
+.articulos{
+    background-color: #d3e4cd;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #6f796f;
+    align-items: flex-end;}
+.articulos #artconj1, #artconj2, #artvest, #arttop {
+    background-color: #d3e4cd;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #6f796f;
+    align-items: flex-end;}
+.img{
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    box-shadow: 0px 0px 10px #6f796f;}
+.recprecios{
+    display: flex;
+    background-color: #d3e4cd;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: justify;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px #6f796f;}
+.camion{
+    
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #d3e4cd;
+    border-radius: 50%; 
+    color:#39b54a }
+.prices{
+    padding-left: 18px;
+    color: #666;}
+.offer{
+    margin-left: 70px;
+    color:#39b54a;}
+.description{
+    padding-left: 5px;
+    color: #666;}
+.coloriconoS{
+    font-size: 30px;}
+   
+    /*footer*/
+
+.footer{
+    display: flex;}
+.footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;}
+.footer h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10;
+    text-align: center;}
+.centrar{text-align: center;
+    padding:5px;}
+.coloriconoS{
+    color:#1259c3;
+    font-size: 20px;
+    margin-block-end: 10px;}
+.cuerpodetexto{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#6f796f;}
