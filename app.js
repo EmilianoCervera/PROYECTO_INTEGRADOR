@@ -8,10 +8,24 @@ const publicPatch = path.resolve(__dirname,'./public')
 app.use(express.static(publicPatch)); //esta porcion de codigo es para que la carpeta public sea un recurso estatico
 
 
-app.listen(3004, () => {
+app.listen(3002, () => {
     console.log("Servidor corriendo");
 });
 
 app.get('/', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/Home.html'));  // Permite enviar texto o codigo HTML
+});
+
+app.get('/Registro', (req,res) =>{
+    res.sendFile(path.resolve(__dirname, './views/Registro.html'));  // Permite enviar texto o codigo HTML
+});
+
+app.get('/Login', (req,res) =>{
+    res.sendFile(path.resolve(__dirname, './views/Login.html'));  // Permite enviar texto o codigo HTML
+});
+app.get('/', (req,res) =>{
+    res.sendFile(path.resolve(__dirname, './views/Carrito.html'));  // Permite enviar texto o codigo HTML
+});
+app.get('/', (req,res) =>{
+    res.sendFile(path.resolve(__dirname, './views/Detalleproduc.html'));  // Permite enviar texto o codigo HTML
 });

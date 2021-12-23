@@ -175,3 +175,12 @@
         10%   { background-color:#ffe6bc;}  /*0%-From-100%-to*/ 
         100% { background-color: #c3b091 ;}  
      }
+     @media(max-width:480px){
+        .form-register{
+          width: 340px;   
+        }
+        .botton{
+            width: 100%;
+        } 
+         
+     }
