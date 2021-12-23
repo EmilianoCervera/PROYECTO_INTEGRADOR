@@ -1,54 +1,38 @@
+
+/*header*/
+
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url();
-    }
-
+    background-image: url();}
 li{
     list-style-type: none;
-    text-decoration: none;
-    }
+    text-decoration: none;}
 a{
-    text-decoration: none;
-}
+    text-decoration: none;}
+.menu{
+    display: flex;
+    padding-top: 10px;}
+.menu li a{
+    padding: 15px;
+    color: #6f796f;}
+.menu li a:hover{
+    text-decoration: underline;
+    color: #d3e4cd;}
 
 .navegacion{
     display: flex; 
     justify-content: space-between;
     background-color: #d3e4cd;
-    font-size: 15px;
-}
-.menu{
+    font-size: 15px;}
+.espaciodefrase{
     display: flex;
-    padding-top: 10px;
-}
-
-.menu li a{
-    padding: 15px;
-    color: #6f796f;
-}
-
-.menu li a:hover{
-    text-decoration: underline;
-    color: #d3e4cd;
-}
-
-.div{
-        
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 3px;
-    padding: bottom 1px;;
-}
-
-.conteiner{
-    display: flex;
-    flex-wrap: nowrap;
+    
     width: 100%;
-    flex-direction: column;
+    border-top: dotted 2px white;
     align-items: center;
     background-color: #d3e4cd;}
+
+/* titulo medrano */
 .titular{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -56,21 +40,20 @@ a{
     text-align: center;
     margin: auto;
     width: 100%;}
-.imagenbanner{
-    display: none;}
 .headlines{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding: 10px;
     text-align: center;}
+
+/* Articulos */
+
 .articulos{
     background-color: #d3e4cd;
     display: flex;
     flex-direction: column;
-    margin: 10px;
     text-align: center;
-    box-shadow: 0px 0px 10px #6f796f;
-    align-items: flex-end;}
+    box-shadow: 0px 0px 10px #6f796f;}
 .articulos #artconj1, #artconj2, #artvest, #arttop {
     background-color: #d3e4cd;
     display: flex;
@@ -93,16 +76,6 @@ a{
     text-align: justify;
     flex-wrap: wrap;
     box-shadow: 0px 0px 10px #6f796f;}
-.camion{
-    
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #d3e4cd;
-    border-radius: 50%; 
-    color:#39b54a }
 .prices{
     padding-left: 18px;
     color: #666;}
@@ -112,9 +85,9 @@ a{
 .description{
     padding-left: 5px;
     color: #666;}
-.coloriconoS{
-    font-size: 30px;}
-   
+
+
+
     /*footer*/
 
 .footer{
@@ -137,3 +110,8 @@ a{
 .cuerpodetexto{
     font-family: Arial, Helvetica, sans-serif;
     color:#6f796f;}
+
+/*medidas para breackpoint (0px hasta 480px es un celuu)*/
+
+@media(min-width:){}
+@media(max-width:){}
