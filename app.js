@@ -28,9 +28,9 @@ app.get('/Registro', (req,res) =>{
 app.get('/Login', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/Login.html'));  // Permite enviar texto o codigo HTML()
 });
-app.get('/', (req,res) =>{
+app.get('/Carrito', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/Carrito.html'));  // Permite enviar texto o codigo HTML
 });
-app.get('/', (req,res) =>{
+app.get('/Detalleproduc', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/Detalleproduc.html'));  // Permite enviar texto o codigo HTML
 });
