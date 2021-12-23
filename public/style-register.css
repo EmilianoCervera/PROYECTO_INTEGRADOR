@@ -93,6 +93,13 @@
         border-radius: 4px;
         background-color: #8e806a;
     }
+    .centrar{
+        text-align: center;
+    }
+    .sincolor{
+        text-decoration: none;
+    }
+
     .animable-a{
         -webkit-animation-name: cambiarColor;
         animation-name: cambiarColor;
@@ -150,6 +157,7 @@
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count:inherit;
       }
+
       @keyframes cambiarColor {   
         10%   { background-color:#ffe6bc;}  /*0%-From-100%-to*/ 
         100% { background-color: #c3b091 ;}  

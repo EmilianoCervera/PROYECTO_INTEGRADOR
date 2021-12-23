@@ -29,3 +29,6 @@ app.get('/', (req,res) =>{
 app.get('/', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/Detalleproduc.html'));  // Permite enviar texto o codigo HTML
 });
+app.get('/Home', (req,res) =>{
+    res.sendFile(path.resolve(__dirname, './views/Home.html'));  // Permite enviar texto o codigo HTML
+});
