@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"crossorigin="anonymous"></link>
+
+    <link rel = "stylesheet" type = "text/css" href="/css/MEDRANO.css">
+    <!--Uno mi css-->
+    
+    
+<title>Tienda</title>
+  </head>
+  <body>
+    <h1 class="titulo"> MEDRANO STORE</h1>
+    
+    <form id="formulario1" name="formulario1" method="post" action="data.php">
+      Nombre:<br>
+      <input
+      type="text"
+      name="nombre" 
+      id="Nombre" 
+      placeholder="Nombre" 
+      height=""/>
+      <br>
+      Email:<br>
+      <input
+        type="email"
+        name="email"
+        id="Email"
+        value=""
+        placeholder="email"/
+        
+        <br>
+      Dirección:<br>
+      <input
+        type="text"
+        name="dirección"
+        id="Dirección"
+        value=""
+        placeholder="Dirección"/>
+      <br>
+      Cantidad:<br>
+      <input
+        type="number"
+        name="Cantidad"
+        id="Cantidad"
+        size=""
+        maxlength=""
+        value=""
+        placeholder="cantidad"/>
+      <br>  
+    
+    <div class="pago">
+    <label for="pago">Efectivo<input type="radio" name="pago" value="Efectivo">
+    <label for="pago">Tarjeta<input type="radio" name="pago" value="Tarjeta">
+    <label for="pago">Nequi<input type="radio" name="pago" value="Nequi">
+    </div>
+      <div class="enviar">
+        <form action="" method="post">
+        <button type="reset">Atras</button>
+        <button type="submit">Enviar</button>
+      </form>
+      </div>
+    </form>
+
+    
+  </body>
+</html>
