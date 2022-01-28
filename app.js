@@ -5,21 +5,20 @@ const path = require('path');
 
 
 const app = express();
+app.set('view engine', 'ejs');
 
+app.set('views', path.join(__dirname, './src/views'))//Hace que la carpeta views sea global
 
-app.use('/', productosRoutes); // se concatenan las rutas del primer y segundo parámetro
+app.use('/', productosRoutes); 
+app.use('/Detalleproduc', productosRoutes)
+app.use('/Registro', productosRoutes)
+app.use('/Comprar', productosRoutes)
+app.use('/Login', productosRoutes)// se concatenan las rutas del primer y segundo parámetro
+
 
 app.use(express.static(path.resolve(__dirname, './public')));
-//app.use(express.static(path.resolve(__dirname, '..', './public'))); PUSE LA RUTA APP.USE DE ARRIBA
 
-
-app.use(express.static(path.resolve(__dirname, './views')));
-//app.use(express.static(path.resolve(__dirname, '..','./views')));PUSE LA RUTA APP.USE DE ARRIBA
-
-app.set('view engine', 'ejs');
 
 app.listen(3002, () => {
 	console.log('Servidor corriendo');
 });
-
-
