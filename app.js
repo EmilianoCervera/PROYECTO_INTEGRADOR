@@ -1,24 +1,28 @@
-const productosRoutes = require('./src/routes/productosRoutes.js');
+const productosRoutes = require('./src/routes/productosRoutes.js'); //Requiriendo las rutas
 
 const express = require('express');
 const path = require('path');
-
-
 const app = express();
+
+//Motor de vistas
 app.set('view engine', 'ejs');
 
-app.set('views', path.join(__dirname, './src/views'))//Hace que la carpeta views sea global
+//Hace que la carpeta views sea global
+app.set('views', path.join(__dirname, './src/views'));
 
-app.use('/', productosRoutes); 
-app.use('/Detalleproduc', productosRoutes)
-app.use('/Registro', productosRoutes)
-app.use('/Comprar', productosRoutes)
-app.use('/Login', productosRoutes)// se concatenan las rutas del primer y segundo parámetro
+//rutas rendereizadas
+app.use('/', productosRoutes);
+app.use('/Detalleproduc', productosRoutes);
+app.use('/Registro', productosRoutes);
+app.use('/Comprar', productosRoutes);
+app.use('/Login', productosRoutes);
 
-
+//hace que la carpeta public sea estatica
 app.use(express.static(path.resolve(__dirname, './public')));
 
-
+//Levantando servidor
 app.listen(3002, () => {
-	console.log('Servidor corriendo');
+	console.log('Server on port 3002');
 });
+
+

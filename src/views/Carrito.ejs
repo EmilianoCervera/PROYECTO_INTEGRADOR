@@ -10,13 +10,48 @@
 
     <link rel = "stylesheet" type = "text/css" href="/css/MEDRANO.css">
     <!--Uno mi css-->
-    
-    
-<title>Tienda</title>
+    <title>Carrito MS</title>
+  
+    <link href="css/normalize.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9b9890c892.js" crossorigin="anonymous"></script>
+      <!--libreria iconos-->
+  
+    <style>
+    </style>
   </head>
+    
   <body>
+    <main>
+      <header id="header" class="header">
+        <nav class="navegacion">
+
+            <figure class="Logo">
+                <div>
+                    <p class="Log"></p>
+                </div>
+            </figure>
+
+            <ul class="menu">
+                <li>
+                  <a href="Home">Home</a>
+                </li>
+                <br>
+                <li>
+                    <a href="Login">Ingresar</a>
+                </li>
+                <li>
+                    <a href="Registro">Registrarse</a>
+                </li>
+                <br>
+            </ul>
+
+        </nav>
+    </header>
+    </main>
     <h1 class="titulo"> MEDRANO STORE</h1>
     
+
+    <h3 class="CarritoCompras">Carrito</h3>
     <form id="formulario1" name="formulario1" method="post" action="data.php">
       Nombre:<br>
       <input
@@ -32,9 +67,9 @@
         name="email"
         id="Email"
         value=""
-        placeholder="email"/
+        placeholder="email"/>
         
-        <br>
+      <br>
       Dirección:<br>
       <input
         type="text"
@@ -42,6 +77,7 @@
         id="Dirección"
         value=""
         placeholder="Dirección"/>
+      
       <br>
       Cantidad:<br>
       <input
@@ -57,7 +93,7 @@
     <div class="pago">
     <label for="pago">Efectivo<input type="radio" name="pago" value="Efectivo">
     <label for="pago">Tarjeta<input type="radio" name="pago" value="Tarjeta">
-    <label for="pago">Nequi<input type="radio" name="pago" value="Nequi">
+    <label for="pago">Nequi/Paypal<input type="radio" name="pago" value="Nequi/Paypal">
     </div>
       <div class="enviar">
         <form action="" method="post">
@@ -66,7 +102,23 @@
       </form>
       </div>
     </form>
-
+    <footer>
+      <h3 class="pagos" >Puedes realizar tus pagos de manera vitual o contraentrega.  <span>   </span><i class="fas fa-dollar-sign"></i></h3>
+      Nuetra tienda de ropa te facilita al momento de comprar, tener cuotas sin intereses, ademas despues de cada compra acumulas puntos para tu siguiente compra y simpre estaras seguro con nosotros.
+      <h3 class="Envios" >Tus envios seran gratis a nivel nacional despues de compras mayores a 70.000 <span>   </span><i class="fas fa-shipping-fast"></i></h3>
+      Tu primero compra incluira envios gratis en cualquier producto que elijas comprar, sin importar la cantidad de Productosque desees llevar contigo.
+      <h3 class="Seguridad" >  Estaras seguro desde principo a fin <span>   </span><i class="fas fa-dollar-sign"></i></h3>
+      Puedes estar tranquilo con tus compras, ya que nuestros productos cuentan con garantia de 3 meses cada uno, si por algun motivo tienes problemas con los envios se te devolvera el dinero.
+      <h3 class="Contacto" >Contactanos <span>   </span><i class="fas fa-phone-square-alt"></i></h3>
+      A Continuacion encontraras nuestro WhatsApp y nuestro instagram por si llegas a tener alguna duda.
+      <nav class="enlaces"></nav>
+      <span>
+        <a id="redes" href="https://www.instagram.com/?hl=es">instagram</a>
+         <a id="redes" href="https://web.whatsapp.com/">WhatsApp</a>
+      </span>
+      </footer>
     
   </body>
+
+
 </html>

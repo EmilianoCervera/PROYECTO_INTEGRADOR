@@ -1,5 +1,5 @@
 
-
+//Controladores
 const controlador = {
 	Home: (req, res) => {
 		res.render('Home')
