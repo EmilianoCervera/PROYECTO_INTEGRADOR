@@ -5,15 +5,16 @@ const path = require('path');
 
 
 const app = express();
+
 app.set('view engine', 'ejs');
 
 app.set('views', path.join(__dirname, './src/views'))//Hace que la carpeta views sea global
 
 app.use('/', productosRoutes); 
-app.use('/Detalleproduc', productosRoutes.Detalleproduc)
-app.use('/Registro', productosRoutes.Registro)
-app.use('/Comprar', productosRoutes.Comprar)
-app.use('/Login', productosRoutes.Login)// se concatenan las rutas del primer y segundo parámetro
+app.use('/Detalleproduc', productosRoutes)
+app.use('/Registro', productosRoutes)
+app.use('/Comprar', productosRoutes)
+app.use('/Login', productosRoutes)// se concatenan las rutas del primer y segundo parámetro
 
 
 app.use(express.static(path.resolve(__dirname, './public')));
