@@ -24,5 +24,3 @@ app.use(express.static(path.resolve(__dirname, './public')));
 app.listen(3002, () => {
 	console.log('Server on port 3002');
 });
-
-

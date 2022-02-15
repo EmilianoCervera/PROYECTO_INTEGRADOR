@@ -1,22 +1,20 @@
-
 //Controladores
 const controlador = {
 	Home: (req, res) => {
-		res.render('Home')
+		res.render('Home');
 	},
 	Detalle: (req, res) => {
-		res.render('Detalleproduc')
+		res.render('Detalleproduc');
 	},
 	Registro: (req, res) => {
-		res.render('Registro')
+		res.render('Registro');
 	},
-	Carrito: (req, res)=>{
-		res.render('Carrito')
+	Carrito: (req, res) => {
+		res.render('Carrito');
 	},
 	Login: (req, res) => {
-		res.render('Login')
-	}
-}
+		res.render('Login');
+	},
+};
 
 module.exports = controlador;
-

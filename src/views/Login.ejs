@@ -23,28 +23,29 @@
 
                 <h4>Medrano Store</h4>
 
-                <form action="" method="POST">
-                 <label for="nombre"></label>
-                                                 
-                <input class="controls animable-a" type="text" type="email" type="number" name="usuario" placeholder="telefono usuario o correo electronico" id="nombre"/>
-                <br>      
 
-                <input class="controls animable-b" type="password" name="clave" placeholder="password" />
+                <form action="Home" method="POST">
+                 
+                              <label for="usuario">Usuario </label>                   
+                <input class="controls animable-a" type="text" type="email" type="number" name="usuario" placeholder="telefono usuario o correo electronico" id="nombre" required/>
+                <br>      
+                <label for="password">Contraseña </label>
+                <input class="controls animable-b" type="password" name="password" placeholder="password" required/>
                 <br>
                                                               
                 <button class="bottons animable" type="submit">iniciar sesion</button>  
 
-                <button class="botton animable1" type="reset"> Reiniciar </button>
+                <!--<button class="botton animable1" type="reset"> Reiniciar </button> -->
                 <br>
                 
                 <div class="div1">
-                    <h5><a href="#">¿Olvidaste la contraseña?</a></h5>
+                    <h5><a href="Registro">¿Olvidaste la contraseña?</a></h5>
                 </div>
 
                 <br>
-                <p>¿No tienescuenta? <a href="Registro">Registrate</a></p>   
+                <p>¿No tienes cuenta? <a href="Registro">Registrate</a></p>   
                 <br>
-                <a href="Home">Home</a>    
+                <a href="/Home">Home</a>    
                 
                 </form>
 
